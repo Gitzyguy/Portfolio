@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name – Network & Cybersecurity Professional</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom colors */
+    :root {
+      --networkgreen: #2ca78d;
+      --cyberblue: #007acc;
+      --firewallred: #d94f4f;
+    }
+    .text-networkgreen {
+      color: var(--networkgreen);
+    }
+    .bg-networkgreen {
+      background-color: var(--networkgreen);
+    }
+    .text-cyberblue {
+      color: var(--cyberblue);
+    }
+    .bg-cyberblue {
+      background-color: var(--cyberblue);
+    }
+    .text-firewallred {
+      color: var(--firewallred);
+    }
+    .bg-firewallred {
+      background-color: var(--firewallred);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+<!-- NAVIGATION -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <nav class="container mx-auto flex justify-between items-center p-6">
+    <a href="#home" class="text-2xl font-bold text-networkgreen">Your Name</a>
+    <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+      <li><a href="#about" class="hover:text-networkgreen">About</a></li>
+      <li><a href="#skills" class="hover:text-networkgreen">Skills</a></li>
+      <li><a href="#education" class="hover:text-networkgreen">Education</a></li>
+      <li><a href="#experience" class="hover:text-networkgreen">Experience</a></li>
+      <li><a href="#volunteering" class="hover:text-networkgreen">Volunteering</a></li>
+      <li><a href="#certifications" class="hover:text-networkgreen">Certifications</a></li>
+      <li><a href="#contact" class="hover:text-networkgreen">Contact</a></li>
+    </ul>
+    <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+      <i class="fas fa-bars text-2xl text-networkgreen"></i>
+    </button>
+  </nav>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+    <ul class="flex flex-col space-y-4 p-6 font-semibold text-gray-700">
+      <li><a href="#about" class="block hover:text-networkgreen">About</a></li>
+      <li><a href="#skills" class="block hover:text-networkgreen">Skills</a></li>
+      <li><a href="#education" class="block hover:text-networkgreen">Education</a></li>
+      <li><a href="#experience" class="block hover:text-networkgreen">Experience</a></li>
+      <li><a href="#volunteering" class="block hover:text-networkgreen">Volunteering</a></li>
+      <li><a href="#certifications" class="block hover:text-networkgreen">Certifications</a></li>
+      <li><a href="#contact" class="block hover:text-networkgreen">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<!-- HERO / ABOUT -->
+<section id="about" class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-white">
+  <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-networkgreen">Your Name</h1>
+  <p class="text-xl md:text-2xl max-w-3xl text-gray-700">
+    Network & Cybersecurity Professional | Sales Engineer | Field Technician
+  </p>
+  <p class="mt-4 max-w-3xl text-gray-600">
+    Specialized in designing, securing, and managing enterprise network solutions. Passionate about reducing cyber risk and delivering resilient infrastructure for businesses.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <h2 class="text-3xl font-bold text-center mb-16 relative inline-block">
+      Skills
+      <span class="absolute bottom-0 left-0 w-full h-1 bg-networkgreen"></span>
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition cursor-default">
+        <div class="text-networkgreen text-4xl mb-4 text-center"><i class="fas fa-shield-alt"></i></div>
+        <h3 class="text-xl font-semibold mb-2 text-center">Network Security</h3>
+        <p class="text-gray-600 text-center">Cisco, Meraki, Juniper, Fortinet</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition cursor-default">
+        <div class="text-cyberblue text-4xl mb-4 text-center"><i class="fas fa-network-wired"></i></div>
+        <h3 class="text-xl font-semibold mb-2 text-center">Networking</h3>
+        <p class="text-gray-600 text-center">LAN/WAN, SD-WAN, EPL/EVPL</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition cursor-default">
+        <div class="text-firewallred text-4xl mb-4 text-center"><i class="fas fa-lock"></i></div>
+        <h3 class="text-xl font-semibold mb-2 text-center">Security Protocols</h3>
+        <p class="text-gray-600 text-center">NIST 800-84, Threat Detection, Incident Response</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition cursor-default">
+        <div class="text-networkgreen text-4xl mb-4 text-center"><i class="fas fa-server"></i></div>
+        <h3 class="text-xl font-semibold mb-2 text-center">Enterprise Equipment</h3>
+        <p class="text-gray-600 text-center">ADVA, RAD, Linux Systems, VoIP</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition cursor-default">
+        <div class="text-cyberblue text-4xl mb-4 text-center"><i class="fas fa-cloud"></i></div>
+        <h3 class="text-xl font-semibold mb-2 text-center">Cloud & Database</h3>
+        <p class="text-gray-600 text-center">Cloud Management, Salesforce, SQL</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition cursor-default">
+        <div class="text-firewallred text-4xl mb-4 text-center"><i class="fas fa-cogs"></i></div>
+        <h3 class="text-xl font-semibold mb-2 text-center">IT Practices</h3>
+        <p class="text-gray-600 text-center">ITIL, Technical Sales, Troubleshooting</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-20 bg-white">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h2 class="text-3xl font-bold text-center mb-16 relative inline-block">
+      Education
+      <span class="absolute bottom-0 left-0 w-full h-1 bg-networkgreen"></span>
+    </h2>
+    <div class="space-y-8">
+      <div>
+        <h3 class="text-2xl font-semibold text-networkgreen">Western Governors University</h3>
+        <p class="italic text-gray-700 mb-2">BS Cybersecurity and Information Assurance (In progress - 2025)</p>
+        <p class="text-gray-600 max-w-3xl">
+          Relevant coursework: Digital Forensics in Cybersecurity, Cryptography, Information Systems Security
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <h2 class="text-3xl font-bold text-center mb-16 relative inline-block">
+      Experience
+      <span class="absolute bottom-0 left-0 w-full h-1 bg-networkgreen"></span>
+    </h2>
+
+    <!-- Job 1 -->
+    <article class="mb-12 bg-white p-8 rounded-lg shadow hover:shadow-lg transition cursor-default">
+      <h3 class="text-2xl font-semibold text-networkgreen mb-1">
+        Sales Engineer – Spectrum Enterprise
+      </h3>
+      <p class="italic text-gray-700 mb-2">Coppell, TX | 10/2023 - Current</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Designed and implemented secure network and managed voice solutions for 40+ clients, using network segmentation and encrypted protocols.</li>
+        <li>Deployed Fortinet, Cisco, Meraki, Juniper security architectures, reducing cyber threat vulnerability by 40%.</li>
+        <li>Implemented NIST 800-84 business continuity and NIST 800-171 firewall/MFA standards for 15+ clients, increasing compliance by 30% and generating $2M new revenue.</li>
+        <li>Presented technical solutions to C-level executives, boosting client acquisition by 15% and retention by 10%.</li>
+        <li>Led technical sales support and cybersecurity training, improving sales by 20%.</li>
+        <li>Designed secure SD-WAN for a multinational client, cutting attack surface by 30% and improving performance.</li>
+      </ul>
+    </article>
+
+    <!-- Job 2 -->
+    <article class="mb-12 bg-white p-8 rounded-lg shadow hover:shadow-lg transition cursor-default">
+      <h3 class="text-2xl font-semibold text-networkgreen mb-1">
+        Field Technician VI – Spectrum Enterprise
+      </h3>
+      <p class="italic text-gray-700 mb-2">Richardson, TX | 08/2021 - 10/2023</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Installed enterprise security equipment: ADVA, RAD, Juniper, Meraki, FortiGate firewalls for 200+ clients.</li>
+        <li>Used Salesforce and Excel for documentation, reducing survey time by 30% and improving delivery efficiency.</li>
+        <li>Collaborated with ISP, NOC, and restoration teams to maintain 99.99% uptime for fiber services.</li>
+        <li>Managed large-scale deployment for Applebee's: 80 locations with Meraki firewall/switch/APs, enhancing security and uniformity.</li>
+        <li>Expertise in EPL, EVPL, EPLAN, FIA within datacenters using LOAs and ISP docs for circuit security.</li>
+      </ul>
+    </article>
+
+    <!-- Job 3 -->
+    <article class="mb-12 bg-white p-8 rounded-lg shadow hover:shadow-lg transition cursor-default">
+      <h3 class="text-2xl font-semibold text-networkgreen mb-1">
+        Field Technician I-V – Spectrum Business
+      </h3>
+      <p class="italic text-gray-700 mb-2">Plano, TX | 09/2014 - 08/2021</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Installed and troubleshot Spectrum Business cable, VOIP, and internet for 1000+ clients.</li>
+        <li>Used diagnostic tools like heat maps and RF analyzers to improve wireless security and performance per FCC standards.</li>
+        <li>Maintained 98% customer satisfaction and 95% first-call resolution, minimizing callbacks and vulnerabilities.</li>
+        <li>Managed escalations involving sensitive data privacy and network security challenges.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- VOLUNTEERING -->
+<section id="volunteering" class="py-20 bg-white">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h2 class="text-3xl font-bold text-center mb-16 relative inline-block">
+      Volunteering
+      <span class="absolute bottom-0 left-0 w-full h-1 bg-networkgreen"></span>
+    </h2>
+    <article class="bg-gray-50 rounded-lg shadow p-8 max-w-3xl mx-auto text-center cursor-default">
+      <h3 class="text-xl font-semibold mb-2 text-networkgreen">Spectrum Community Outreach</h3>
+      <p class="italic text-gray-700 mb-4">Dallas, TX | 09/2022</p>
+      <p class="text-gray-700">
+        Volunteered at the Wesley-Rankin: Sarah Wilke Youth Center, upgrading fence entrance for enhanced physical security, laying sod, landscaping, painting, and installing screen/projector.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h2 class="text-3xl font-bold text-center mb-16 relative inline-block">
+      Certifications
+      <span class="absolute bottom-0 left-0 w-full h-1 bg-networkgreen"></span>
+    </h2>
+    <ul class="space-y-6 text-gray-700 text-lg list-disc list-inside max-w-xl mx-auto cursor-default">
+      <li>CCNA (Cisco Certified Network Associate) <span class="italic">(05/2023 - 05/2026)</span></li>
+      <li>SSCP (Systems Security Certified Practitioner), ISC2 <span class="italic">(12/2024 - 12/2027)</span></li>
+      <li>Cisco Certified CyberOps Associate <span class="italic">(04/2024 - 04/2027)</span></li>
+      <li>LPI Linux Essentials <span class="italic">(11/2024)</span></li>
+      <li>Junos (JNCIA-Junos), Juniper Networks <span class="italic">(08/2022 - 08/2025)</span></li>
+      <li>CMNA (Cisco Meraki Network Associate) <span class="italic">(05/2024)</span></li>
+      <li>Fortinet NSE 1, 2 and 3 <span class="italic">(07/2022)</span></li>
+      <li>ITIL Foundations <span class="italic">(09/2024 - 09/2027)</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-white">
+  <div class="container mx-auto px-6 max-w-lg">
+    <h2 class="text-3xl font-bold text-center mb-12 relative inline-block">
+      Contact Me
+      <span class="absolute bottom-0 left-0 w-full h-1 bg-networkgreen"></span>
+    </h2>
+    <form
+      action="mailto:your.email@example.com"
+      method="POST"
+      enctype="text/plain"
+      class="bg-gray-50 rounded-lg shadow p-8"
+    >
+      <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="Name"
+        required
+        class="w-full border border-gray-300 rounded px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-networkgreen"
+      />
+
+      <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="Email"
+        required
+    class="w-full border border-gray-300 rounded px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-networkgreen"
+  />
+
+  <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+  <textarea
+    id="message"
+    name="Message"
+    rows="5"
+    required
+    class="w-full border border-gray-300 rounded px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-networkgreen"
+  ></textarea>
+
+  <button
+    type="submit"
+    class="w-full bg-networkgreen hover:bg-green-700 text-white font-bold py-3 rounded transition"
+  >
+    Send
+  </button>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-networkgreen text-white py-6 text-center">
+  <p>© 2025 Your Name. All rights reserved.</p>
+  <div class="mt-2 space-x-6 text-xl">
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" class="hover:text-gray-200">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub" class="hover:text-gray-200">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="mailto:your.email@example.com" aria-label="Email" class="hover:text-gray-200">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
